@@ -1,0 +1,156 @@
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App {
+  text-align: center;
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+
+.App-header button {
+  margin-right: 9px;
+  margin-top: 15px;
+}
+
+
+.App-header h1 {
+  font-size: 1.5em;
+  color: #000000;
+}
+
+table {
+  width: 99%;
+  border-collapse: collapse;
+  margin-left: 9px;
+}
+
+th {
+  font-size: 13px;
+  background-color: rgba(0, 91, 144, 0.941);
+  color: white;
+  padding: 15px;
+  border-right: 2px solid white;
+}
+
+td {
+  padding: 15px;
+  text-align: left;
+  word-break: break-word;
+  border-right: 2px solid white;
+  font-size: 0.8em;
+  /* font-size réduite pour les cellules du tableau */
+}
+
+/* Spécifique pour le titre */
+td:nth-child(1) {
+  text-align: center;
+  width: 23%;
+  /* Largeur spécifique pour la colonne titre */
+  color: rgba(0, 91, 144, 0.941);
+  /* couleur de titre */
+}
+
+/* Spécifique pour le texte */
+th:nth-child(2),
+td:nth-child(2) {
+  text-align: center;
+  width: 40%;
+  /* Largeur spécifique pour la colonne texte */
+}
+
+/* Spécifique pour les autres colonnes */
+th:nth-child(n+3),
+td:nth-child(n+3) {
+  text-align: center;
+  width: 6,75%;
+  /* Largeur spécifique pour les autres colonnes */
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+button {
+  background-color: rgba(0, 91, 144, 0.941);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+
+button:hover {
+  background-color: #0050c8;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ReactModal__Overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ReactModal__Content {
+  position: relative;
+  width: 50%;
+  padding: 20px;
+  font-size: 14px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+form button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+form button[type="button"] {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+}
